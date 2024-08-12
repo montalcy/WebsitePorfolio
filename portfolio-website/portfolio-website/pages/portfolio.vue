@@ -1,6 +1,7 @@
 <template>
   <p class="font">
     🚧 hello!! this page is still under construction 🚧 
+            thank you for your patience!
   </p>
 </template>
 
