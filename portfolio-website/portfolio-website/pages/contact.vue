@@ -5,12 +5,13 @@
       <v-card>
       <v-card-text style=" text-align: center; font-size: large" class="pd" height="10">
         <v-card-actions>
-          <v-btn
-            color="black"
-            density="compact"
-            icon="mdi-close-circle-outline"
-            @click="modelValue = false"/>
-          </v-card-actions>
+            <v-btn 
+              color="black"
+              density="compact"
+              icon="mdi-close-circle-outline"
+              @click="modelValue = false"/>
+            </v-card-actions>
+            
 
           <v-alert class="animated-background">
           <v-list-item-icon>
