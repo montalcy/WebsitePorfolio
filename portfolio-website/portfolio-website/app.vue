@@ -4,7 +4,7 @@
 
       <v-app-bar >
           <v-list-item class="font"
-            prepend-avatar="C:\Users\Cynthia\Desktop\portfolio-website\portfolio-website\public\cyndy.jpg"
+            prepend-avatar="\cyndy.jpg"
             subtitle="2025 Graduate"
             title="Cynthia Montalvo"
           ></v-list-item>
