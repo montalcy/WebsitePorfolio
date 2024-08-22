@@ -2,6 +2,8 @@
   <p class="font">
     🚧 hello!! this page is still under construction 🚧 
             thank you for your patience!
+            &NewLine;
+            In the meantime, check my github for projects! Github: https://github.com/montalcy
   </p>
 </template>
 
