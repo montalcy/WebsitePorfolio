@@ -82,7 +82,7 @@ function toggleDialog() {
 }
 const email = "cynthia.1.montalvo@gmail.com";
 const phone = "(509) 200-8939";
-const linkedinUrl = "https://www.linkedin.com/in/cynthia-montalvo-792722302";
+const linkedinUrl = "https://www.linkedin.com/in/cynthia-montalvo-792722302/";
 const githubUrl = "https://github.com/montalcy";
 
 const modelValue = ref(true);

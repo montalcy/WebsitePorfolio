@@ -1,61 +1,147 @@
 <!-- THIS SECTION IS FOR MY ABOUT ME -->
 
 <template>
-  <div class="animated-background">
-    <h1 style="text-align: center" class="font">About me</h1>
-    <br />
-    <h4 style="text-align: center" class="font">Hello!👋</h4>
-    <p style="text-align: center" class="font">
-      I'm a soon-to-be graduate with a degree in
-      <strong>Computer Science </strong> from Eastern Washington University with
-      both a minor in <br />
-      <strong>Visual Communication Design </strong> and
-      <strong>Spanish.</strong> <br />
+  <v-carousel
+    :continuous="false"
+    :show-arrows="true"
+    height="650"
+    delimiter-icon="mdi-checkbox-blank-circle"
+    hide-delimiter-background="true"
+    show-arrows="hover"
+    style="border: 3px solid white"
+  >
+    <v-carousel-item height="700" class="animated-background">
+      <br />
+      <h1 style="text-align: center" class="font">About me</h1>
+      <br />
       <br />
 
-      Throughout my academic career, I've developed a strong foundation in API
-      integration, problem solving, front and back end development, version
-      control (git, github), testing, communication, and collaboration. For
-      instance, during my internship at Spokane Teachers Credit Unit
-      headquarters, I was able to work collaboratively with the team to create
-      internal isolated function apps for STCU employees. This opportunity
-      allowed me to work with languages such as C#, HTML and CSS allowing me to
-      solidify my learning and grow my understanding of how front end and back
-      end design work together. I'm particularly drawn to front end development
-      because it allows you to think about how the consumer may benefit from
-      your design options and allows me to put my design minor to use! Although
-      I've enjoyed and have been able to grow my front end skills outside of
-      school, I've had more experience with backend work and enjoy the process
-      of problem solving through diverse problems. I'm eager to bring and grow
-      my skills in a collaborative environment and contribute to a greater good!
+      <h4 style="text-align: center" class="font">Hello!👋</h4>
+      <p style="text-align: center" class="font">
+        I'm a soon-to-be graduate with a degree in
+        <strong>Computer Science </strong> from Eastern Washington University
+        with both a minor in <br />
+        <strong>Visual Communication Design </strong> and
+        <strong>Spanish.</strong> <br />
+        <br />
+
+        Throughout my academic career, I've developed a strong foundation in API
+        integration, problem solving, front and back end development, version
+        control (git, github), testing, communication, and collaboration. For
+        instance, during my internship at Spokane Teachers Credit Unit
+        headquarters, I was able to work collaboratively with the team to create
+        internal isolated function apps for STCU employees. This opportunity
+        allowed me to work with languages such as C#, HTML and CSS allowing me
+        to solidify my learning and grow my understanding of how front end and
+        back end design work together. I'm particularly drawn to front end
+        development because it allows you to think about how the consumer may
+        benefit from your design options and allows me to put my design minor to
+        use! Although I've enjoyed and have been able to grow my front end
+        skills outside of school, I've had more experience with backend work and
+        enjoy the process of problem solving through diverse problems. I'm eager
+        to bring and grow my skills in a collaborative environment and
+        contribute to a greater good!
+        <br />
+        <br />
+        <strong>
+          Check out some of my work by clicking the brain icon up at the top 🧠
+        </strong>
+      </p>
+    </v-carousel-item>
+    <v-carousel-item height="700" class="animated-background">
+      <br />
+      <h1 style="text-align: center" class="font">Languages</h1>
       <br />
       <br />
-      <strong>
-        Check out some of my work by clicking the brain icon up at the top 🧠
-      </strong>
+      <p style="text-align: center" class="font">
+        
+        <br />
+        <h3>
+          I have a solid foundation in backend development using:
+        </h3>
+        <strong>
+          <br />
+          <br />
+          C# ⚙️
+        </strong>
+        - experience in object-oriented programming and .NET framework
+        <br />
+
+        <strong> Java☕ </strong>
+        - developed applications and solutions to numerous projects throughout
+        my education
+        <strong>
+          <br />
+          SQL🗂️
+        </strong>
+        - basic understanding and experience with SQL for database querying and
+        management
+        <br />
+        <br />
+        <br />
+        <h3>
+          In addition to my backend experience, I am actively expanding my
+          skills <br/>in front-end development using:
+        </h3>
+        <br />
+        <br />
+
+        <strong> HTML🖼️ </strong>
+        -building and structuring web content
+        <br />
+        <strong> CSS🎨 </strong>
+        -designing and styling visually appealing web interfaces
+        <br />
+      </p>
+    </v-carousel-item>
+    <v-carousel-item height="700" class="animated-background">
+      <br />
+      <h1 style="text-align: center" class="font">Education</h1>
       <br />
       <br />
-      <strong>Languages: </strong>
-      <br />
-      C#
-      <br />
-      HTML
-      <br />
-      CSS
-      <br />
-      Java
-      <br />
-      SQL
-      <br />
-    </p>
-  </div>
+
+
+      <p style="text-align: center" class="font">
+        
+        <br />
+        <h3>
+          Eastern Washington University
+        </h3>
+       <br/>
+       <br/>
+        <h3>
+          Major:
+        </h3>
+         Bachelor of Science in Computer Science🖥️
+          <br/>
+          <br/>
+          <h3>
+            Minors:
+          </h3>
+           Design, Spanish📚
+           <br/>
+           <br/>
+          <h3>
+          Graduation Date:
+          </h3>
+           Spring 2025🌻
+          <br/>
+          <br/>
+          <h3>
+          GPA:
+          </h3>
+          3.61
+        </p>
+
+    </v-carousel-item>
+  </v-carousel>
 
   <!-- THIS SECTION IS FOR THE POPUP -->
 
   <v-dialog width="500">
     <template v-slot:activator="{ props: activatorProps }">
       <v-container>
-        <v-row justify="center">
+        <v-row justify="center" style="align-items: end">
           <v-col class="text-center">
             <v-btn
               v-bind="activatorProps"
@@ -154,11 +240,7 @@
   <!-- THIS SECTION IS FOR THE FOOTER AT BOTTOM OF PAGE -->
 
   <footer class="footer">
-    <p class="font">
-      <br />
-      <br />
-      &copy; My Portfolio Website 2024
-    </p>
+    <p class="font">&copy; My Portfolio Website 2024</p>
   </footer>
 </template>
 
