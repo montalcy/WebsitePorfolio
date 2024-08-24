@@ -127,7 +127,7 @@
         >
         <v-img src="/public/guess.png"></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
-            Guess the billy!
+            Guess The Billy!
           </v-card-title>
           <v-card-text class="font"> My first class project where we had the task to create a simple
             static web app with only front-end work and deploy it to azure. We decided on a simple guessing game.
