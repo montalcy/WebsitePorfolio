@@ -125,7 +125,7 @@
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
         >
-        <v-img src="/public/guess.png"></v-img>
+        <v-img src="/public/Guess.png"></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
             Guess The Billy!
           </v-card-title>
