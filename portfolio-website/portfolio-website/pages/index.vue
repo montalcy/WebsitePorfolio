@@ -2,13 +2,13 @@
 
 <template>
   <v-carousel
-    :continuous="false"
-    :show-arrows="true"
+    :continuous="true"
+    :show-arrows="false"
     height="650"
     delimiter-icon="mdi-checkbox-blank-circle"
-    hide-delimiter-background="true"
-    show-arrows="hover"
-    style="border: 3px solid white"
+   show-arrows="hover"
+
+    
   >
     <v-carousel-item height="700" class="animated-background">
       <br />
