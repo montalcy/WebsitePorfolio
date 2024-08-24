@@ -107,7 +107,7 @@
           </v-card-title>
           <v-card-text class="font">
             Photography portfolio. I'd love for you
-            to check out other work I've done in the past! 
+            to check out work I've done in the past! 
           </v-card-text>
           <v-card-actions class="d-flex justify-center">
             <v-btn
