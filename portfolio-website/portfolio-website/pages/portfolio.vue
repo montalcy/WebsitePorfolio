@@ -1,7 +1,6 @@
 <template>
-  <v-container>
     <v-row>
-      <v-col cols="3">
+      <v-col cols="3" offset="2">
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
@@ -52,16 +51,16 @@
         </v-sheet>
       </v-col>
 
-      <v-col cols="3" offset="1">
+      <v-col cols="3" offset="">
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
         >
         <v-card-title class="text-center font" style="font-weight: bolder">
-            LinkedIn<v-icon>mdi-linkedin</v-icon>
+            LinkedIn <v-icon>mdi-linkedin</v-icon>
           </v-card-title>
           <v-card-text class="font">
-            Wanna connect? Check out my linked in by pressing the button down below!
+            Wanna connect? <br> Check out my linked in by pressing the button down below!
           </v-card-text>
           <v-card-actions class="d-flex justify-center">
             <v-btn
@@ -97,7 +96,7 @@
         </v-sheet>
       </v-col>
 
-      <v-col cols="3" offset="1">
+      <v-col cols="3" offset="">
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
@@ -144,7 +143,6 @@
         </v-sheet>
       </v-col>
     </v-row>
-  </v-container>
   <footer class="footer" style="text-align: center">
     <p class="font">&copy; My Portfolio Website 2024</p>
   </footer>

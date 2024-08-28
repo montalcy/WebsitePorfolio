@@ -44,8 +44,19 @@
         <br />
         <br />
         <strong>
-          Check out some of my work by clicking the brain icon up at the top 🧠
+          Check out some of my work by clicking the button below 
         </strong>
+        <br/>
+        <br/>
+
+        <v-btn color="white"
+              text
+              variant="elevated"
+              class="font" 
+              @click="router.push('/portfolio')" >
+            <v-icon> mdi-brain</v-icon>Portfolio
+        </v-btn>
+      
       </p>
     </v-carousel-item>
     <v-carousel-item height="700" class="animated-background">
@@ -107,6 +118,9 @@
         <h3>
           Eastern Washington University
         </h3>
+        <p>
+          Cheney, Washington 99004
+        </p>
        <br/>
        <br/>
         <h3>
@@ -245,6 +259,8 @@
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
 const email = "cynthia.1.montalvo@gmail.com";
 const phone = "(509) 200-8939";
 const linkedinUrl = "https://www.linkedin.com/in/cynthia-montalvo-792722302";

@@ -16,11 +16,6 @@
             <v-icon>mdi-home-outline</v-icon>
           </v-list-item-icon>
         </v-list-item>
-        <v-list-item density="compact" @click="router.push('/portfolio')" f>
-          <v-list-item-icon>
-            <v-icon> mdi-brain</v-icon>
-          </v-list-item-icon>
-        </v-list-item>
       </v-app-bar>
 
       <!-- Main content goes here -->
