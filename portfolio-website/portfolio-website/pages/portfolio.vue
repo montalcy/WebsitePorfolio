@@ -1,4 +1,5 @@
 <template>
+   <div class="d-flex justify-center">
     <v-row>
       <v-col cols="3" offset="2">
         <v-sheet
@@ -143,6 +144,7 @@
         </v-sheet>
       </v-col>
     </v-row>
+    </div>
   <footer class="footer" style="text-align: center">
     <p class="font">&copy; My Portfolio Website 2024</p>
   </footer>
