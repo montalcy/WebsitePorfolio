@@ -64,65 +64,56 @@
       <h1 style="text-align: center" class="font">Languages</h1>
       <br />
       <br />
-      <v-row>
-        <v-col cols="6" md="6">
-          <h3 style="text-align: center;" class="font">
-            I have a solid foundation in backend development using the following languages:
-          </h3>
-          <br>
-          <br>
-          <v-card style="text-align: center; padding:1.5%;" elevation="6"class="font">
-          <br>
-
-          <strong>
-            C# ⚙️
-          </strong>
-          - experience in object-oriented programming and .NET framework
-          <br />
-          
-          <strong> Java☕ </strong>
-          - developed applications and solutions to numerous projects throughout
-          my education
-          <strong>
-            <br />
-            SQL🗂️
-          </strong>
-          - basic understanding and experience with SQL for database querying and
-          management
-          <br />
-          <br />
-      </v-card>
-        <br />
+      <p style="text-align: center" class="font">
         
         <br />
+        <h3>
+          I have a solid foundation in backend development using:
+        </h3>
+        <strong>
+          <br />
+          <br />
+          C# ⚙️
+        </strong>
+        - experience in object-oriented programming and .NET framework
         <br />
-      </v-col>
-      <v-col  cols="6" md="6">
-        <h3 class="font" style="text-align: center;">
+
+        <strong> Java☕ </strong>
+        - developed applications and solutions to numerous projects throughout
+        my education
+        <strong>
+          <br />
+          SQL🗂️
+        </strong>
+        - basic understanding and experience with SQL for database querying and
+        management
+        <br />
+        <br />
+        <br />
+        <h3>
           In addition to my backend experience, I am actively expanding my
           skills <br/>in front-end development using:
         </h3>
-        <br>
-        <v-card style="text-align: center; padding:1.5%;" elevation="6"class="font">
-            <br>
+        <br />
+        <br />
 
         <strong> HTML🖼️ </strong>
         -building and structuring web content
         <br />
         <strong> CSS🎨 </strong>
         -designing and styling visually appealing web interfaces
-        <br />        <br/>
-    </v-card>
-    </v-col>
-  </v-row>
+        <br />
+      </p>
     </v-carousel-item>
     <v-carousel-item height="700" class="animated-background">
       <br />
       <h1 style="text-align: center" class="font">Education</h1>
       <br />
       <br />
-      <div class="d-flex justify-center">
-      <v-card style="text-align: center; width:fit-content; padding:1.5%" elevation="6"class="font">
+
+
+      <p style="text-align: center" class="font">
+        
         <br />
         <h3>
           Eastern Washington University
@@ -135,8 +126,8 @@
         <h3>
           Major:
         </h3>
-        Bachelor of Science in Computer Science🖥️
-        <br/>
+         Bachelor of Science in Computer Science🖥️
+          <br/>
           <br/>
           <h3>
             Minors:
@@ -151,14 +142,11 @@
           <br/>
           <br/>
           <h3>
-            GPA:
+          GPA:
           </h3>
           3.61
-          <br/>
-          <br/>         
-      </v-card>
+        </p>
 
-        </div>
     </v-carousel-item>
   </v-carousel>
 
