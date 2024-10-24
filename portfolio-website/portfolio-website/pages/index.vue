@@ -300,23 +300,23 @@ const githubUrl = "https://github.com/montalcy";
 @media (max-width: 768px) { 
   .about-text {
     font-family: monospace;
-    font-size: .9rem;
+    font-size: .5rem;
   }
 
   .about-title {
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
 }
 
 @media (max-width: 375px) {
   .about-text {
     font-family: monospace;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
   .about-title {
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
 }
 </style>

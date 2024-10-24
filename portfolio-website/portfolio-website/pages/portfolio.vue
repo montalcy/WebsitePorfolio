@@ -150,17 +150,17 @@
         >
         <v-img ></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
-            Placeholder for work to come! 
+            Back to Home Page 
           </v-card-title>
-          <v-card-text class="font">  Place holder for work to come
+          <v-card-text class="font">Click below! 
           </v-card-text>
           <v-card-actions class="d-flex justify-center">
             <v-btn
             class="font"
-              href=""
+              @click="router.push('/')"
               target="_blank"
               variant="outlined"
-            > </v-btn>
+            > Home</v-btn>
           </v-card-actions>
         </v-sheet>
     </v-col>
@@ -171,6 +171,10 @@
   </footer>
 </template>
 
+<script lang="ts" setup>
+import { useRouter } from "vue-router";
+const router = useRouter();
+</script>
 <style scoped>
 .animated-background {
   background: linear-gradient(45deg, #ff6b6b, #f7f7f7, #6bff6b);
