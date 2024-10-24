@@ -10,7 +10,15 @@
         ></v-list-item>
 
         <v-spacer></v-spacer>
-
+        
+        <v-list-item>
+          <v-btn color="white"
+          variant="elevated"
+          class="font" 
+          @click="router.push('/portfolio')" >
+          <v-icon> mdi-brain</v-icon>Portfolio
+        </v-btn>
+      </v-list-item>
         <v-list-item density="compact" @click="router.push('/')">
           <v-list-item-icon>
             <v-icon>mdi-home-outline</v-icon>

@@ -1,6 +1,10 @@
 <!-- THIS SECTION IS FOR MY ABOUT ME -->
 
 <template>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your page description here.">
+    <title>Your Page Title</title>
   <v-carousel
     :continuous="true"
     :show-arrows="false"
@@ -12,12 +16,12 @@
   >
     <v-carousel-item height="700" class="animated-background">
       <br />
-      <h1 style="text-align: center" class="font">About me</h1>
+      <h1 style="text-align: center" class="font about-title">About me</h1>
       <br />
       <br />
 
-      <h4 style="text-align: center" class="font">Hello!👋</h4>
-      <p style="text-align: center" class="font">
+      <h4 style="text-align: center" class="font about-text">Hello!👋</h4>
+      <p style="text-align: center" class="font about-text">
         I'm a soon-to-be graduate with a degree in
         <strong>Computer Science </strong> from Eastern Washington University
         with both a minor in <br />
@@ -44,27 +48,21 @@
         <br />
         <br />
         <strong>
-          Check out some of my work by clicking the button below 
+          Check out some of my work by clicking the portfolio button above
         </strong>
         <br/>
         <br/>
 
-        <v-btn color="white"
-              text
-              variant="elevated"
-              class="font" 
-              @click="router.push('/portfolio')" >
-            <v-icon> mdi-brain</v-icon>Portfolio
-        </v-btn>
+       
       
       </p>
     </v-carousel-item>
     <v-carousel-item height="700" class="animated-background">
       <br />
-      <h1 style="text-align: center" class="font">Languages</h1>
+      <h1 style="text-align: center" class="font about-title">Languages</h1>
       <br />
       <br />
-      <p style="text-align: center" class="font">
+      <p style="text-align: center" class="font about-text">
         
         <br />
         <h3>
@@ -107,12 +105,12 @@
     </v-carousel-item>
     <v-carousel-item height="700" class="animated-background">
       <br />
-      <h1 style="text-align: center" class="font">Education</h1>
+      <h1 style="text-align: center" class="font about-title">Education</h1>
       <br />
       <br />
 
 
-      <p style="text-align: center" class="font">
+      <p style="text-align: center" class="font about-text">
         
         <br />
         <h3>
@@ -251,12 +249,14 @@
     </template>
   </v-dialog>
 
+
   <!-- THIS SECTION IS FOR THE FOOTER AT BOTTOM OF PAGE -->
 
   <footer class="footer">
-    <p class="font">&copy; My Portfolio Website 2024</p>
+    <p class="font">&copy; 2024 Cynthia Montalvo. All rights reserved. </p>
   </footer>
 </template>
+
 
 <script setup>
 import { useRouter } from "vue-router";
@@ -295,5 +295,28 @@ const githubUrl = "https://github.com/montalcy";
   margin: 20px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+@media (max-width: 768px) { 
+  .about-text {
+    font-family: monospace;
+    font-size: .9rem;
+  }
+
+  .about-title {
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-text {
+    font-family: monospace;
+    font-size: 0.9rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
 }
 </style>

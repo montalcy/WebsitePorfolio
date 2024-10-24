@@ -1,7 +1,7 @@
 <template>
    <div class="d-flex justify-center">
     <v-row>
-      <v-col cols="3" offset="2">
+      <v-col cols="12" sm="1" md="2" lg="3">
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
@@ -52,7 +52,7 @@
         </v-sheet>
       </v-col>
 
-      <v-col cols="3" offset="">
+      <v-col cols="12" sm="1" md="2" lg="3">
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
@@ -97,7 +97,7 @@
         </v-sheet>
       </v-col>
 
-      <v-col cols="3" offset="">
+      <v-col cols="12" sm="1" md="2" lg="3">
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
@@ -143,6 +143,27 @@
           </v-card-actions>
         </v-sheet>
       </v-col>
+      <v-col cols="12" sm="1" md="2" lg="3">
+        <v-sheet
+          class="pa-3 ma-3 animated-background"
+          style="width: fit-content"
+        >
+        <v-img ></v-img>
+          <v-card-title class="text-center font" style="font-weight: bolder">
+            Placeholder for work to come! 
+          </v-card-title>
+          <v-card-text class="font">  Place holder for work to come
+          </v-card-text>
+          <v-card-actions class="d-flex justify-center">
+            <v-btn
+            class="font"
+              href=""
+              target="_blank"
+              variant="outlined"
+            > </v-btn>
+          </v-card-actions>
+        </v-sheet>
+    </v-col>
     </v-row>
     </div>
   <footer class="footer" style="text-align: center">
