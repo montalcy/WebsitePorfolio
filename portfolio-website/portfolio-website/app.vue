@@ -20,25 +20,26 @@
           </template>
           <v-list>
             <v-list-item color="white" class="font"  @click="router.push('/')">
-              <v-list-item-title>Home /br<v-icon  size="x-small">mdi-home</v-icon></v-list-item-title>
+              <v-list-item-title>Home <v-icon  size="x-small">mdi-home-outline</v-icon></v-list-item-title>
             </v-list-item>
             <v-list-item   class="font"  @click="router.push('/portfolio')">
-              <v-list-item-title>Portfolio<v-icon></v-icon></v-list-item-title>
+              <v-list-item-title>Portfolio <v-icon size="x-small">mdi-brain</v-icon></v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
 
-        <v-list-item v-else>
-          <v-btn color="white" variant="elevated" class="font" @click="router.push('/portfolio')">
+        <v-list v-else>
+          <v-btn  variant="flat" class="font" @click="router.push('/portfolio')">
             <v-icon>mdi-brain</v-icon> Portfolio
           </v-btn>
-        </v-list-item>
-
-        <v-list-item v-else density="compact" @click="router.push('/')">
+          <v-btn variant="flat" class="font"  @click="router.push('/')">
           <v-list-item-icon>
             <v-icon>mdi-home-outline</v-icon>
           </v-list-item-icon>
-        </v-list-item>
+        </v-btn>
+        </v-list>
+        
+        
 
       </v-app-bar>
 
