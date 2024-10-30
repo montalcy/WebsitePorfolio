@@ -1,10 +1,6 @@
 <!-- THIS SECTION IS FOR MY ABOUT ME -->
 
 <template>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your page description here.">
-    <title>Your Page Title</title>
   <v-carousel
     :continuous="true"
     :show-arrows="false"
@@ -28,7 +24,6 @@
         <strong>Visual Communication Design </strong> and
         <strong>Spanish.</strong> <br />
         <br />
-
         Throughout my academic career, I've developed a strong foundation in API
         integration, problem solving, front and back end development, version
         control (git, github), testing, communication, and collaboration. For
@@ -300,7 +295,7 @@ const githubUrl = "https://github.com/montalcy";
 @media (max-width: 768px) { 
   .about-text {
     font-family: monospace;
-    font-size: .5rem;
+    font-size: .6rem;
   }
 
   .about-title {
@@ -312,7 +307,73 @@ const githubUrl = "https://github.com/montalcy";
 @media (max-width: 375px) {
   .about-text {
     font-family: monospace;
-    font-size: 0.5rem;
+    font-size: .5rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .about-text {
+    font-family: monospace;
+    font-size: .9rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-text {
+    font-family: monospace;
+    font-size: .7rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 344px) {
+  .about-text {
+    font-family: monospace;
+    font-size: .5rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .about-text {
+    font-family: monospace;
+    font-size: .6rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-text {
+    font-family: monospace;
+    font-size: .5rem;
+  }
+  .about-title {
+    font-family: monospace;
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .about-text {
+    font-family: monospace;
+    font-size: .6rem;
   }
   .about-title {
     font-family: monospace;

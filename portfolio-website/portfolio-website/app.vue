@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout>
+    <title>Cynthia Montalvo</title>
     <v-app class="animated-background">
       <v-app-bar>
         <v-list-item
@@ -11,19 +12,34 @@
 
         <v-spacer></v-spacer>
         
-        <v-list-item>
-          <v-btn color="white"
-          variant="elevated"
-          class="font" 
-          @click="router.push('/portfolio')" >
-          <v-icon> mdi-brain</v-icon>Portfolio
-        </v-btn>
-      </v-list-item>
-        <v-list-item density="compact" @click="router.push('/')">
+        <v-menu v-model="menu" offset-y v-if="isMobile" @click="menu = !menu">
+          <template #activator="{ props }">
+            <v-list-item v-bind="props">
+              <v-icon>mdi-menu</v-icon>
+            </v-list-item>
+          </template>
+          <v-list>
+            <v-list-item color="white" class="font"  @click="router.push('/')">
+              <v-list-item-title>Home /br<v-icon  size="x-small">mdi-home</v-icon></v-list-item-title>
+            </v-list-item>
+            <v-list-item   class="font"  @click="router.push('/portfolio')">
+              <v-list-item-title>Portfolio<v-icon></v-icon></v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
+        <v-list-item v-else>
+          <v-btn color="white" variant="elevated" class="font" @click="router.push('/portfolio')">
+            <v-icon>mdi-brain</v-icon> Portfolio
+          </v-btn>
+        </v-list-item>
+
+        <v-list-item v-else density="compact" @click="router.push('/')">
           <v-list-item-icon>
             <v-icon>mdi-home-outline</v-icon>
           </v-list-item-icon>
         </v-list-item>
+
       </v-app-bar>
 
       <!-- Main content goes here -->
@@ -38,7 +54,23 @@
 
 <script lang="ts" setup>
 import { useRouter } from "vue-router";
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
 const router = useRouter();
+const menu = ref(false);
+const isMobile = ref(false);
+const checkWidth = () => {
+  isMobile.value = window.innerWidth <= 600; 
+};
+
+onMounted(() => {
+  checkWidth();
+  window.addEventListener('resize', checkWidth);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', checkWidth);
+});
 </script>
 
 <style scoped>
@@ -61,7 +93,6 @@ const router = useRouter();
   }
 }
 
-/* Apply Roboto Light (300) to paragraphs */
 .font {
   font-family: monospace;
 }
