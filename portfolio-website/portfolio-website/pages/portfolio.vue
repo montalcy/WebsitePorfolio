@@ -1,8 +1,8 @@
 <template>
-   <div class="d-flex justify-center">
+  <div class="d-flex justify-center">
     <v-row>
       <v-col cols="12" sm="1" md="2" lg="3">
-        <v-sheet
+        <!-- <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
         >
@@ -23,11 +23,14 @@
               Github
             </v-btn>
           </v-card-actions>
-        </v-sheet>
+        </v-sheet> -->
 
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
+          border
+          rounded
+          :elevation="12"
         >
           <v-img src="/public/slotsOfFun.png"></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
@@ -53,7 +56,7 @@
       </v-col>
 
       <v-col cols="12" sm="1" md="2" lg="3">
-        <v-sheet
+        <!-- <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
         >
@@ -73,32 +76,40 @@
               LinkedIn
             </v-btn>
           </v-card-actions>
-        </v-sheet>
+        </v-sheet> -->
 
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
+          border
+          rounded
+          :elevation="12"
         >
-        <v-img src="/public/wordle1.png"></v-img>
+          <v-img src="/public/wordle1.png"></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
             HillBiddle!
           </v-card-title>
-          <v-card-text class="font"> Class project where we recreated the game Wordle! My partner and I were challenged with working with full-stack development.
-            Unfortunately, it hasn't been correctly set up with our database (I plan to
-            take this project up again and re-vamp it)! </v-card-text>
+          <v-card-text class="font">
+            Class project where we recreated the game Wordle! My partner and I
+            were challenged with working with full-stack development.
+            Unfortunately, it hasn't been correctly set up with our database (I
+            plan to take this project up again and re-vamp it)!
+          </v-card-text>
           <v-card-actions class="d-flex justify-center">
             <v-btn
-            class="font"
+              class="font"
               href="https://gentle-sand-0aaa3be10.5.azurestaticapps.net/"
               target="_blank"
               variant="outlined"
-            > Play now </v-btn>
+            >
+              Play now
+            </v-btn>
           </v-card-actions>
         </v-sheet>
       </v-col>
 
       <v-col cols="12" sm="1" md="2" lg="3">
-        <v-sheet
+        <!-- <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
         >
@@ -119,27 +130,35 @@
               Flickr
             </v-btn>
           </v-card-actions>
-        </v-sheet>
+        </v-sheet> -->
 
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
+          border
+          rounded
+          :elevation="12"
         >
-        <v-img src="/public/Guess.png"></v-img>
+          <v-img src="/public/Guess.png"></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
             Guess The Billy!
           </v-card-title>
-          <v-card-text class="font"> My first class project where we had the task to create a simple
-            static web app with only front-end work and deploy it to azure. We decided on a simple guessing game.
-            This is the beginning of the HillBilly saga. It was also my first time touching front-end development.
+          <v-card-text class="font">
+            My first class project where we had the task to create a simple
+            static web app with only front-end work and deploy it to azure. We
+            decided on a simple guessing game. This is the beginning of the
+            HillBilly saga. It was also my first time touching front-end
+            development.
           </v-card-text>
           <v-card-actions class="d-flex justify-center">
             <v-btn
-            class="font"
+              class="font"
               href="https://mango-tree-002df5010.5.azurestaticapps.net/"
               target="_blank"
               variant="outlined"
-            > Play now </v-btn>
+            >
+              Play now
+            </v-btn>
           </v-card-actions>
         </v-sheet>
       </v-col>
@@ -147,27 +166,32 @@
         <v-sheet
           class="pa-3 ma-3 animated-background"
           style="width: fit-content"
+          border
+          rounded
+          :elevation="12"
         >
-        <v-img ></v-img>
+          <v-img></v-img>
           <v-card-title class="text-center font" style="font-weight: bolder">
-            Back to Home Page 
+            Back to Home Page
           </v-card-title>
-          <v-card-text class="font">Click below! 
-          </v-card-text>
+          <v-card-text class="font">Click below! </v-card-text>
           <v-card-actions class="d-flex justify-center">
             <v-btn
-            class="font"
+              class="font"
               @click="router.push('/')"
               target="_blank"
               variant="outlined"
-            > Home</v-btn>
+            >
+              Home</v-btn
+            >
           </v-card-actions>
         </v-sheet>
-    </v-col>
+      </v-col>
     </v-row>
-    </div>
+  </div>
+  <br/>
   <footer class="footer" style="text-align: center">
-    <p class="font">&copy; My Portfolio Website 2024</p>
+    <p class="font">&copy; 2024 Cynthia Montalvo. All rights reserved.</p>
   </footer>
 </template>
 

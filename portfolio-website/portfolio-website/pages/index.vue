@@ -1,14 +1,13 @@
 <!-- THIS SECTION IS FOR MY ABOUT ME -->
 
 <template>
+  <v-card :elevation="12" height="650" class="rounded-class">
   <v-carousel
     :continuous="true"
     :show-arrows="false"
     height="650"
     delimiter-icon="mdi-checkbox-blank-circle"
-   show-arrows="hover"
-
-    
+    class="rounded-class"
   >
     <v-carousel-item height="700" class="animated-background">
       <br />
@@ -243,7 +242,7 @@
       </v-card-actions>
     </template>
   </v-dialog>
-
+</v-card>
 
   <!-- THIS SECTION IS FOR THE FOOTER AT BOTTOM OF PAGE -->
 
@@ -290,6 +289,10 @@ const githubUrl = "https://github.com/montalcy";
   margin: 20px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.rounded-class{
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) { 
