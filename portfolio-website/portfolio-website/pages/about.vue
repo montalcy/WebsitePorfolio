@@ -4,22 +4,8 @@
       class="pa-3 ma-3"
       style="width: fit-content; background-color: transparent"
       max-width="400"
+      max-height="10"
     >
-      <v-card-actions class="d-flex justify-center"> </v-card-actions>
-    </v-sheet>
-    <v-sheet
-      class="pa-3 ma-3"
-      style="width: fit-content; background-color: transparent"
-      max-width="400"
-    >
-      <v-card-actions class="d-flex justify-center"> </v-card-actions>
-    </v-sheet>
-    <v-sheet
-      class="pa-3 ma-3"
-      style="width: fit-content; background-color: transparent"
-      max-width="400"
-    >
-      <v-card-actions class="d-flex justify-center"> </v-card-actions>
     </v-sheet>
   </v-row>
 
