@@ -32,6 +32,7 @@
           href="https://github.com/montalcy"
           target="_blank"
           variant="outlined"
+          :elevation="9"
         >
           Github
         </v-btn>
@@ -59,6 +60,7 @@
           href="https://www.linkedin.com/in/cynthia-montalvo-792722302/"
           target="_blank"
           variant="outlined"
+          :elevation="9"
         >
           LinkedIn
         </v-btn>
@@ -86,16 +88,13 @@
           href="https://www.flickr.com/photos/197422998@N04/page1"
           target="_blank"
           variant="outlined"
+          :elevation="9"
         >
           Flickr
         </v-btn>
       </v-card-actions>
     </v-sheet>
   </v-row>
-  <br/>
-  <footer class="footer" style="text-align: center">
-    <p class="font">&copy; 2024 Cynthia Montalvo. All rights reserved.</p>
-  </footer>
 </template>
 
 <style scoped>

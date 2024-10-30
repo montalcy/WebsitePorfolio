@@ -48,6 +48,7 @@
               href="https://black-water-0a7392b1e.5.azurestaticapps.net/"
               target="_blank"
               variant="outlined"
+              :elevation="9"
             >
               Play now
             </v-btn>
@@ -101,6 +102,7 @@
               href="https://gentle-sand-0aaa3be10.5.azurestaticapps.net/"
               target="_blank"
               variant="outlined"
+              :elevation="9"
             >
               Play now
             </v-btn>
@@ -156,6 +158,7 @@
               href="https://mango-tree-002df5010.5.azurestaticapps.net/"
               target="_blank"
               variant="outlined"
+              :elevation="9"
             >
               Play now
             </v-btn>
@@ -181,6 +184,7 @@
               @click="router.push('/')"
               target="_blank"
               variant="outlined"
+              :elevation="9"
             >
               Home</v-btn
             >
@@ -189,10 +193,7 @@
       </v-col>
     </v-row>
   </div>
-  <br/>
-  <footer class="footer" style="text-align: center">
-    <p class="font">&copy; 2024 Cynthia Montalvo. All rights reserved.</p>
-  </footer>
+  
 </template>
 
 <script lang="ts" setup>

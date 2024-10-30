@@ -141,114 +141,9 @@
 
     </v-carousel-item>
   </v-carousel>
-
-  <!-- THIS SECTION IS FOR THE POPUP -->
-
-  <v-dialog width="500">
-    <template v-slot:activator="{ props: activatorProps }">
-      <v-container>
-        <v-row justify="center" style="align-items: end">
-          <v-col class="text-center">
-            <v-btn
-              v-bind="activatorProps"
-              color="white"
-              text
-              variant="elevated"
-              class="font"
-            >
-              <v-icon>mdi-human-greeting-proximity</v-icon>
-              CONTACT ME
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
-    </template>
-
-    <template v-slot:default="{ isActive }">
-      <v-card-text>
-        <v-card-text
-          style="text-align: center; font-size: large"
-          class="pd"
-          height="10"
-        >
-          <!-- THIS SECTION IS FOR THE POPUP CLOSE CIRCLE -->
-
-          <v-alert class="animated-background">
-            <v-card-actions>
-              <v-btn
-                color="black"
-                density="compact"
-                icon="mdi-close-circle-outline"
-                @click="isActive.value = false"
-              />
-            </v-card-actions>
-
-            <!-- THIS SECTION IS FOR THE POPUP CONTENT -->
-
-            <v-list-item-icon>
-              <v-icon>mdi-email-heart-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title class="font">Email:</v-list-item-title>
-              <v-list-item-subtitle class="font">
-                <a :href="'mailto:' + email">{{ email }}</a>
-              </v-list-item-subtitle>
-            </v-list-item-content>
-
-            <v-list-item-icon>
-              <v-icon>mdi-phone</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title class="font">Phone:</v-list-item-title>
-              <v-list-item-subtitle class="font">
-                <a :href="'tel:' + phone">{{ phone }}</a>
-              </v-list-item-subtitle>
-            </v-list-item-content>
-
-            <v-icon>mdi-linkedin</v-icon>
-            <v-list-item-content>
-              <v-list-item-title class="font">LinkedIn:</v-list-item-title>
-              <v-list-item-subtitle class="font">
-                <a
-                  :href="linkedinUrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >{{ linkedinUrl }}</a
-                >
-              </v-list-item-subtitle>
-            </v-list-item-content>
-
-            <v-list-item-icon>
-              <v-icon>mdi-github</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title class="font">Github:</v-list-item-title>
-              <v-list-item-subtitle class="font">
-                <a
-                  :href="githubUrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >{{ githubUrl }}</a
-                >
-              </v-list-item-subtitle>
-            </v-list-item-content>
-          </v-alert>
-        </v-card-text>
-        <v-divider />
-      </v-card-text>
-
-      <v-card-actions>
-        <v-spacer></v-spacer>
-      </v-card-actions>
-    </template>
-  </v-dialog>
 </v-card>
 
-  <!-- THIS SECTION IS FOR THE FOOTER AT BOTTOM OF PAGE -->
 
-  <footer class="footer">
-    <p class="font">&copy; 2024 Cynthia Montalvo. All rights reserved. </p>
-  </footer>
 </template>
 
 
@@ -289,6 +184,10 @@ const githubUrl = "https://github.com/montalcy";
   margin: 20px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.v-dialog {
+  z-index: 1000; /* Adjust as necessary */
 }
 
 .rounded-class{
