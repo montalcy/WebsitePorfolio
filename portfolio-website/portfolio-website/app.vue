@@ -34,7 +34,7 @@
           </v-btn>
           <v-btn variant="flat" class="font"  @click="router.push('/')">
           <v-list-item-icon>
-            <v-icon>mdi-home-outline</v-icon>
+            <v-icon size="large">mdi-home-outline</v-icon>
           </v-list-item-icon>
         </v-btn>
         </v-list>
