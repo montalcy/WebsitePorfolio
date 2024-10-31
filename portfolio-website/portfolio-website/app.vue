@@ -1,12 +1,14 @@
 <template>
   <NuxtLayout>
     <title>Cynthia Montalvo</title>
+    
     <v-app class="animated-background">
       <v-app-bar>
+
         <v-list-item
           class="font"
           prepend-avatar="\cyndy.jpg"
-          subtitle="2025 Graduate"
+          subtitle="Software Developer"
           title="Cynthia Montalvo"
         ></v-list-item>
 
