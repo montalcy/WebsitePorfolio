@@ -80,9 +80,9 @@
                       icon="$vuetify"
                       :elevation="12"
                       style="font-size: small; position: fixed; 
-                bottom: 20px; 
-              right: 20px; 
-                     z-index: 1000;"
+                      bottom: 20px; 
+                      right: 20px; 
+                      z-index: 1000;"
 
                     >
                      <v-icon>mdi-human-greeting-proximity</v-icon>
@@ -111,7 +111,9 @@
                           icon="mdi-close-outline"
                           @click="isActive.value = false"
                           style=" 
-                       z-index: 1000;"
+                          top:20px;
+                          left:20px;
+                          z-index: 1000;"
                         />
                       </v-card-actions>
                       <v-icon>mdi-email-heart-outline</v-icon>
